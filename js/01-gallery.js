@@ -25,7 +25,7 @@ const onImageClick = (event) => {
   const {
     target: { dataset },
   } = event;
-  console.dir(event.target);
+  // console.dir(event.target);
   if (event.target.nodeName !== "IMG") {
     return;
   }
@@ -34,7 +34,7 @@ const onImageClick = (event) => {
 `);
   instance.show();
   const onEscape = (event) => {
-    console.dir("zakrili");
+    // console.dir("zakril");
     if (event.key === "Escape") {
       instance.close(() => {
         document.removeEventListener("keydown", onEscape);
